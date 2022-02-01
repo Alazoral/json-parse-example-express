@@ -7,5 +7,9 @@ app.get('/api/crash', async (req, res) => {
     const json = JSON.parse(text)
     res.status(200).json({ status: 'All Good', count: json.data.length })
 })
+app.post('/api/crash', async (req, res) => {
+    const json = await req.json()
+    res.status(200).json({ status: 'All Good', count: json.data.length })
+})
 
 module.exports = app
