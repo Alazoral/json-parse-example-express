@@ -11,7 +11,7 @@ app.get('/api/crash', async (req, res) => {
     res.status(200).json({ status: 'All Good', count: json.data.length })
 })
 app.post('/api/crash', async (req, res) => {
-    const json = await req.json()
+    const json = req.body
     res.status(200).json({ status: 'All Good', count: json.data.length })
 })
 
