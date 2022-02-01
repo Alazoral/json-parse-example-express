@@ -1,6 +1,9 @@
-const app = require('express')()
+const express = require('express')
 const {readFile} = require('fs/promises')
 const path = require('path')
+
+const app = express()
+app.use(express.json())
 
 app.get('/api/crash', async (req, res) => {
     const text = await readFile(path.resolve('data/crash.json'), 'utf8')
