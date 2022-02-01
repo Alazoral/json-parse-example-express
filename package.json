@@ -1,0 +1,12 @@
+{
+  "name": "json-parse-example-express",
+  "version": "1.0.0",
+  "description": "a minimal reproduction of a Vercel issue",
+  "main": "index.js",
+  "author": "Leon Spencer",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
